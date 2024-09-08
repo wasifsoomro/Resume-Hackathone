@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 20px 0;
+    color: #444;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid #4CAF50;
+}
+
+.skills-container {
+    display: flex;
+    gap: 10px;
+}
+
+#skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#skills-list li {
+    background-color: #4CAF50;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+    position: relative;
+}
+
+#skills-list li::after {
+    content: "✖";
+    color: red;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.resume {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.resume h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.resume p, .resume li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#personal-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#personal-information img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #4CAF50;
+}
+
+.resume-section {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.resume-section h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+    #personal-information {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #personal-information p {
+        text-align: left;
+        margin: 0 20px;
+        width: 60%;
+    }
+}
